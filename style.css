@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  border: none;
+}
+body {
+  background: #000235;
+  font-family: "Outfit", sans-serif;
+  color: #ffffff;
+}
+
+/* BACKGROUND DIVs */
+#circle {
+  position: absolute;
+  width: 679px;
+  height: 679px;
+  background-color: hsl(240, 51%, 70%, 10%);
+  z-index: -1;
+  top: -452px;
+  filter: blur(100px);
+  border-radius: 50%;
+}
+
+/** page container */
+.container {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  max-width: 1204px;
+}
+
+/**NAVBAR */
+.navBar {
+  margin: 46px auto 0 auto;
+  height: 48px;
+  color: #ffffff;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+}
+.navBar ul {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.navBar ul:first-child {
+  font-size: 20px;
+  font-weight: 700;
+}
+.navBar ul:last-child {
+  font-weight: 700;
+  font-size: 17px;
+}
+.navBar li {
+  list-style: none;
+}
+.navBar ul:last-child li {
+  margin-left: 46px;
+}
+.navBar button {
+  cursor: pointer;
+  margin-left: 41px;
+  display: flex;
+  align-items: center;
+  padding: 15.5px 25px 15.5px 0;
+  background: #2d2879;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 60px;
+}
+.navBar button img {
+  padding: 0 14px 0 25px;
+}
+
+/** MAIN SECTION */
+
+main {
+  margin-top: 73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section h1 {
+  font-weight: 700;
+  font-size: 87px;
+  max-width: 463px;
+  line-height: 100%;
+}
+main .section p {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 373px;
+}
+main img {
+  width: 511px;
+  height: 544px;
+}
+.btn {
+  /* margin-right: 15px; */
+  cursor: pointer;
+  margin-top: 43px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 23px 75px 23px 75px;
+  border-radius: 83px;
+}
+.btn-colorBg {
+  margin-right: 15px;
+  background: #8d8dda;
+}
+.btn-transparent {
+  background: transparent;
+  border: 2px solid #abd9d9;
+}
+
+/** LOGO SECTION */
+.logos p {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.logos-flex {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: hsl(246, 43%, 54%, 19%);
+  border-radius: 7px;
+}
