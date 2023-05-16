@@ -14,7 +14,10 @@ body {
   font-family: "Outfit", sans-serif;
   color: #ffffff;
 }
-
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
 /* BACKGROUND DIVs */
 .circle {
   position: absolute;
