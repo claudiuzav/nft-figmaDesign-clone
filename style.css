@@ -43,7 +43,7 @@ body {
   position: absolute;
   width: 20rem;
   height: 10rem;
-  border-radius:50%;
+  border-radius: 50%;
   background-color: hsl(240, 51%, 70%, 100%);
   right: -15%;
   bottom: 0;
@@ -391,9 +391,6 @@ footer li {
   font-weight: 400;
   font-size: 16px;
 }
-::placeholder {
-  color: rgb(255, 255, 255, 67%);
-}
 .email-wrapper input:last-child {
   background: #8d8dda;
   margin-right: 4px;
@@ -406,8 +403,14 @@ footer li {
   font-size: 14px;
   letter-spacing: 2px;
 }
+::placeholder {
+  color: rgb(255, 255, 255, 67%);
+}
 input:focus {
   outline: none;
+}
+input {
+  color: #abd9d9;
 }
 .footer2nd {
   height: 11px;
