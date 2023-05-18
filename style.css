@@ -88,6 +88,10 @@ img {
 .navBar li {
   list-style: none;
   cursor: pointer;
+  transition: 0.2s ease;
+}
+.navBar li:hover {
+  color: #abd9d9;
 }
 .navBar ul:last-child li {
   margin-left: 46px;
@@ -123,6 +127,20 @@ main .section h1 {
   max-width: 463px;
   line-height: 100%;
 }
+main .section {
+  animation: fadeIn-section 1s forwards;
+}
+@keyframes fadeIn-section {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 main .section p {
   margin-top: 18px;
   /* margin-bottom: 43px; */
@@ -134,6 +152,17 @@ main .section p {
 main img {
   width: 100%;
   max-width: 511px;
+  animation: fadeIn-img 1s forwards;
+}
+@keyframes fadeIn-img {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .btn {
   cursor: pointer;
@@ -150,7 +179,7 @@ main img {
 }
 .btn-transparent {
   margin-top: 0.5rem;
-  padding: 23px 60px 23px 75px;
+  padding: 23px 62px 23px 75px;
   background: transparent;
   border: 2px solid #abd9d9;
 }
@@ -158,6 +187,17 @@ main img {
 /** LOGO SECTION */
 .logos {
   margin-top: 163px;
+  animation: fadeIn-logos 1s forwards;
+}
+@keyframes fadeIn-logos {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .logos p {
   font-size: 20px;
@@ -481,6 +521,7 @@ input {
   .btn-colorBg {
     margin-right: 0px;
   }
+
   .btn-viewPricing {
     font-size: 18px;
     padding: 20px 61px 20px 61px;
@@ -512,13 +553,15 @@ input {
   main {
     flex-direction: column-reverse;
   }
-  main .section{
+  main .section {
     align-items: center;
     justify-content: center;
   }
-  .btn{
-    align-self: center;
-    justify-self: center;
+  .btn-colorBg {
+    padding: 20px 55px 20px 55px;
+  }
+  .btn-transparent {
+    padding: 20px 42px 20px 55px;
   }
   /*! Analytics */
   .analytics-section {
@@ -540,6 +583,9 @@ input {
   }
 
   /*! CARDS */
+  .testimonials {
+    margin-top: 5.5rem;
+  }
   .wrapper-cards {
     flex-direction: column;
     width: 100%;
@@ -572,17 +618,7 @@ input {
     padding: 22px 61px 22px 61px;
     border-radius: 83px;
   }
-}
-
-@media (max-width: 370px) {
-  /*! LOGOs  */
-  .logos-flex {
-    flex-direction: column;
-  }
-  /*!GET STARTEDS */
-  .get-started h2 {
-    font-size: 37px;
-  }
+  /*! FOOTER */
   footer {
     align-items: flex-start;
     text-align: start;
@@ -597,6 +633,18 @@ input {
   .newsletter p {
     font-size: 22px;
   }
+}
+
+@media (max-width: 370px) {
+  /*! LOGOs  */
+  .logos-flex {
+    flex-direction: column;
+  }
+  /*!GET STARTEDS */
+  .get-started h2 {
+    font-size: 37px;
+  }
+  /*! Email */
   .email-wrapper {
     border-radius: 70px;
     max-width: 245px;
